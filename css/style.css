@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --ss-poppins: "Poppins", sans-serif;
+  --ss-font500: 500;
+  --ss-font600: 600;
+  --ss-font700: 700;
+  --ss-font800: 800;
+  --ss-fontbold: bold;
+  --ss-primary: #22A652;
+  --ss-secondary: #FFE824;
+}
+
+body {
+  font-family: var(--ss-poppins);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #000;
+  overflow-x: hidden;
+}
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+    color: var(--ss-secondary);
+}
+button {
+    border: none;
+    background-color: transparent;
+}
+.common-btn {
+    padding: 0.7rem 2.5rem;
+    color: #fff;
+    font-size: 1.8rem;
+    background: var(--ss-primary);
+    border: none;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.common-btn span {
+    vertical-align: middle;
+    font-size: 3rem;
+}
+.common-btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0px;
+    background-color: var(--ss-secondary);
+    height: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+}
+.common-btn:hover:before {
+    width: 100%;
+}
+.common-btn:hover span {
+    color: var(--ss-primary) !important;
+    transition: all 0.3s;
+}
+.common-btn:hover {
+    color: #000;
+}
+.title-box {
+    margin-bottom: 6rem;
+}
+.title-box h3 {
+    color: var(--ss-primary);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.title-box h4 {
+    color: #000;
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+.p-100 {
+    padding: 10rem 0rem;
+}
+.mt-100 {
+    margin: 10rem 0rem;
+}
+/*Header CSS*/
+.topbar-area {
+    background-color: var(--ss-primary);
+    padding: 1rem 0rem;
+    color: #fff;
+}
+.topbar-area .topbar-left ul {
+    gap: 2rem;
+    align-items: center;
+}
+.topbar-area .topbar-left ul li p,a {
+    color: #000;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.topbar-area .topbar-left ul li span {
+    color: var(--ss-secondary);
+    vertical-align: middle;
+    font-size: 1.8rem;
+}
+.topbar-area .topbar-right p {
+    text-align: right;
+    font-size: 1.4rem;
+}
+.header-area .sidenav button {
+    border: none;
+    background-color: #E1E6F0;
+    font-size: 2.5rem;
+    border-radius: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 3rem;
+}
+.header-area .navbar a {
+    color: #000;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.header-area .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+.header-area .navbar-nav {
+    gap: 2.5rem;
+}
+.header-area .navbar-nav .active {
+    color: var(--ss-primary);
+    position: relative;
+}
+.header-area .navbar-nav .active:before {
+    content: "";
+    position: absolute;
+    left: -2.5rem;
+    background: url(../images/menu-icon.png) no-repeat;
+    width: 2rem;
+    height: 2rem;
+}
+.header-area .navbar-nav a:hover {
+    color: var(--ss-primary);
+}
+/*Header CSS*/
+
+/*Banner CSS*/
+.banner-area {
+    background: url(../images/banner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0rem;
+    position: relative;
+}
+.banner-area:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00000070;
+}
+.banner-area:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    transform: rotate(180deg);
+    background: url(../images/banner-line.png) no-repeat;
+}
+.banner-area .banner-content {
+    max-width: 67rem;
+    position: relative;
+}
+.banner-area .banner-content h1 {
+    font-size: 7rem;
+    color: #fff;
+}
+.banner-area .banner-content span {
+    color: var(--ss-secondary);
+}
+.banner-area .banner-content p {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 4rem 0rem;
+}
+/*Banner CSS*/
+
+/*Activity CSS*/
+.activity-area .title-box {
+    max-width: 75rem;
+}
+.activity-area .activity-box {
+    padding: 7rem 4rem;
+    position: relative;
+}
+.activity-area .row .col-md-3:nth-child(1) .activity-box {
+  background: #307AD5;
+}
+.activity-area .row .col-md-3:nth-child(2) .activity-box {
+  background: #FF922E;
+}
+.activity-area .row .col-md-3:nth-child(3) .activity-box {
+  background: #33BFFF;
+}
+.activity-area .row .col-md-3:nth-child(4) .activity-box {
+  background: #D94DA6;
+}
+.activity-area .activity-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: url(../images/activity-effect.png) no-repeat;
+    width: 100%;
+    height: 3rem;
+    left: 0;
+    right: 0;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+.activity-area .activity-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: url(../images/activity-effect.png) no-repeat;
+    width: 100%;
+    height: 3rem;
+    left: 0;
+    right: 0;
+    background-size: contain;
+}
+.activity-area .activity-box h3 {
+    color: #fff;
+    font-size: 2.2rem;
+}
+.activity-area .activity-box img {
+    margin: 3rem 0rem 4rem;
+    width: 100%;
+    max-height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.activity-area .activity-box p {
+    font-size: 1.4rem;
+    color: #fff;
+}
+.activity-area .activity-boy {
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+/*Activity CSS*/
+
+/*About CSS*/
+.about-area {
+    background: linear-gradient(20deg, rgb(175 255 197 / 0%) 0%, rgb(183 255 196 / 10%) 0%, rgb(227 255 233) 100%);
+    position: relative;
+}
+.about-area:before {
+    content: "";
+    position: absolute;
+    background: url(../images/banner-line.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+}
+.about-area .container {
+    padding: 0rem 10rem 8rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 0rem 0rem 1.5rem 1.5rem;
+}
+.about-area .about-left img {
+    border-radius: 0rem 0rem 5rem 5rem;
+}
+.about-area .about-right {
+    float: right;
+}
+.about-area .about-right .about-box {
+    padding: 2.4rem 4rem;
+    background-color: var(--ss-primary);
+    max-width: 40rem;
+    border-radius: 0rem 10rem 10rem 0rem;
+}
+.about-area .about-right .about-box ul li h3 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+}
+.about-area .about-right .about-box ul li p {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.about-area .about-right .about-box ul {
+    justify-content: space-between;
+}
+.about-area .about-right .about-content {
+    font-size: 1.6rem;
+    color: #000;
+    margin: 3rem 0rem;
+    max-width: 70rem;
+    line-height: 3rem;
+}
+/*About CSS*/
+
+/*Program CSS*/
+.program-area {
+    padding-bottom: 6rem;
+}
+.program-area .program-boy {
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+.program-area .title-box {
+    text-align: right;
+}
+.program-area .program-swiper h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding-top: 3rem;
+}
+.program-area .program-swiper h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    background: url(../images/program-bg.png) no-repeat;
+    background-position: center;
+    padding: 1rem;
+    margin: 2rem 0rem 2.5rem;
+}
+.program-area .program-swiper p {
+    font-size: 1.6rem;
+}
+.program-area .program-swiper {
+    padding-bottom: 4rem;
+}
+.program-area .swiper-box {
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 1.5rem;
+    position: relative;
+}
+.program-area .swiper-box p {
+    max-width: 23rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.4rem;
+}
+.program-area .swiper-box .swiper-content {
+    position: relative;
+}
+.program-area .swiper-box .swiper-content:after {
+    position: absolute;
+    content: "";
+    background: url(../images/program-design.png) no-repeat;
+    background-position: center;
+    top: -4rem;
+    width: 100%;
+    height: 4rem;
+    left: 0;
+}
+.program-area .swiper-slide:nth-child(1) .swiper-box {
+  border-color: #33BFFF;
+}
+.program-area .swiper-slide:nth-child(2) .swiper-box {
+  border-color: #EB3EA9;
+}
+.program-area .swiper-slide:nth-child(3) .swiper-box {
+  border-color: #FF922E;
+}
+.program-area .swiper-slide:nth-child(4) .swiper-box {
+  border-color: #307AD5;
+}
+.program-area .program-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: aqua;
+    border-radius: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
+.program-area .swiper-slide:nth-child(4n+1) .swiper-box .program-btn {
+    background-color: #33BFFF;
+}
+.program-area .swiper-slide:nth-child(4n+2) .swiper-box .program-btn {
+    background-color: #EB3EA9;
+}
+.program-area .swiper-slide:nth-child(4n+3) .swiper-box .program-btn {
+    background-color: #FF922E;
+}
+.program-area .swiper-slide:nth-child(4n+4) .swiper-box .program-btn {
+    background-color: #307AD5;
+}
+.program-area .swiper-content {
+    padding-bottom: 4rem;
+}
+.program-area .swiper-slide:nth-child(2n) .swiper-box {
+  margin-top: 4.5rem;
+}
+/*Program CSS*/
+
+/*Award CSS*/
+.award-area {
+    background: linear-gradient(20deg, rgb(175 255 197 / 0%) 0%, rgb(183 255 196 / 10%) 0%, rgb(227 255 233) 100%);
+    position: relative;
+    padding-bottom: 6rem;
+}
+.award-area .award-swiper {
+    padding-bottom: 4rem;
+}
+.award-area .cap-pic {
+    position: absolute;
+    right: 5%;
+}
+.award-area .title-box {
+    max-width: 90rem;
+}
+.award-area .swiper-content h3 {
+    color: #000;
+    font-size: 2.2rem;
+}
+.award-area .swiper-content {
+    padding: 2rem;
+}
+.award-area .swiper-content p {
+    color: #666666;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    margin: 1.5rem 0rem 2rem;
+}
+.award-area .swiper-box {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 1.5rem;
+}
+.award-area .swiper-box ul {
+    gap: 1rem;
+    align-items: center;
+}
+.award-area .swiper-box ul li span {
+    color: #666666;
+    font-size: 1.4rem;
+}
+.award-area .swiper-box ul li span a {
+    color: var(--ss-primary);
+}
+.award-area .swiper-box .swiper-content {
+    position: relative;
+    background-color: #fff;
+}
+.award-area .swiper-box .swiper-content:after {
+    position: absolute;
+    content: "";
+    background: url(../images/program-design.png) no-repeat;
+    background-position: center;
+    top: -4rem;
+    width: 100%;
+    height: 4rem;
+    left: 0;
+}
+/*Resposive CSS*/
+@media (min-width: 1700px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1580px;
+  }
+}
+@media (max-width: 1700px) {
+    
+}
+@media (max-width: 1399px) {
+    
+}
+@media (min-width: 1400px) {
+
+}
+@media (max-width: 1199px) {
+    
+}
+@media screen and (max-width: 991px) {
+    
+}
+@media screen and (min-width: 992px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (max-width: 767px) {
+    
+}
+@media screen and (max-width: 575px) {
+    
+}
+@media screen and (max-width: 480px) {
+    
+}
+@media screen and (max-width: 375px) {
+    
+}
