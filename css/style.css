@@ -237,16 +237,16 @@ button {
     padding: 7rem 4rem;
     position: relative;
 }
-.activity-area .row .col-md-3:nth-child(1) .activity-box {
+.activity-area .row .col-md-6:nth-child(1) .activity-box {
   background: #307AD5;
 }
-.activity-area .row .col-md-3:nth-child(2) .activity-box {
+.activity-area .row .col-md-6:nth-child(2) .activity-box {
   background: #FF922E;
 }
-.activity-area .row .col-md-3:nth-child(3) .activity-box {
+.activity-area .row .col-md-6:nth-child(3) .activity-box {
   background: #33BFFF;
 }
-.activity-area .row .col-md-3:nth-child(4) .activity-box {
+.activity-area .row .col-md-6:nth-child(4) .activity-box {
   background: #D94DA6;
 }
 .activity-area .activity-box::before {
@@ -531,11 +531,16 @@ button {
 /*Advisor Area*/
 .advisor-area {
     padding-bottom: 6rem;
+    z-index: 1;
 }
 .advisor-area .advisor-tree {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
+}
+.advisor-area .swiper-box img {
+    width: 100%;
 }
 .advisor-area .title-box {
     text-align: right;
@@ -907,7 +912,59 @@ button {
     }
     .offcanvas ul li:last-child {
         border-bottom: 0px solid var(--ss-primary);
-  }
+    } 
+    .activity-area .row {
+        row-gap: 2rem;
+    }
+    .activity-area .activity-boy {
+        max-width: 30%;
+    }
+    .p-100 {
+        padding: 5rem 0rem;
+    }
+    .mt-100 {
+        margin: 5rem 0rem;
+    }
+    .title-box h4 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    .program-area .program-boy {
+        max-width: 15%;
+    }
+    .award-area .cap-pic {
+        right: 0%;
+        max-width: 20%;
+    }
+    .advisor-area .advisor-swiper {
+        padding-bottom: 0rem;
+    }
+    .events-area {
+        padding-bottom: 0rem;
+    }
+    .footer-area .footer-middle .row {
+        gap: 3rem;
+    }
+    .footer-area .footer-left {
+        margin-bottom: 4rem;
+    }
+    .footer-area .footer-right .row {
+        margin-top: 2rem;
+    }
+    .footer-area .footer-middle .footer-links ul {
+        margin-top: 2rem;
+    }
+    .footer-area .footer-middle .play-boy {
+        right: 0rem;
+        bottom: -5rem;
+    }
+    .footer-area .copyright-text {
+        padding: 3rem 0rem;
+        margin-top: 3rem;
+    }
+    .footer-area .footer-left .cloud-pic {
+        right: 40%;
+    }
 }
 @media screen and (min-width: 992px) {
     .header-area .navbar-nav .dropdown-menu {
@@ -930,7 +987,77 @@ button {
 
 }
 @media screen and (max-width: 767px) {
-    
+    .banner-area .banner-content h1 {
+        font-size: 3rem;
+        line-height: 4.4rem;
+    }
+    .banner-area .banner-content p {
+        font-size: 1.6rem;
+        margin: 2rem 0rem 4rem;
+        line-height: 2.6rem;
+    }
+    .banner-area {
+        padding: 5rem 0rem 8rem;
+    }
+    .title-box h4 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .title-box {
+        margin-bottom: 3rem;
+    }
+    .activity-area .activity-box::before {
+        top: -2px;
+    }
+    .activity-area .activity-box::after {
+        bottom: -2px;
+    }
+    .about-area .about-right {
+        float: none;
+        margin-top: 4rem;
+    }
+    .about-area .about-left img {
+        border-radius: 0rem;
+    }
+    .about-area .about-right .about-box {
+        padding: 2.4rem 3rem;
+        max-width: 100%;
+    }
+    .about-area .about-right .about-box ul {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .award-area .swiper-pic img {
+        width: 100%;
+    }
+    .award-area .swiper-box .swiper-content:after {
+        background-size: cover;
+    }
+    .gallery-area .swiper-slide {
+        padding-bottom: 0rem;
+    }
+    .footer-area .footer-right {
+        margin-top: 4rem;
+    }
+    .footer-area .footer-left .cloud-pic {
+        right: 11%;
+        top: 15%;
+    }
+    .footer-area {
+        background: none;
+        padding-top: 2rem;
+        background-color: var(--ss-primary);
+    }
+    .footer-area .footer-left p {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+    }
+    .footer-area .footer-middle .footer-links ul li a {
+        font-size: 1.4rem;
+    }
+    .footer-area .footer-right .gallery-content img {
+        border-radius: 0.5rem;
+    }
 }
 @media screen and (max-width: 575px) {
     
