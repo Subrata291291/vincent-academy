@@ -276,7 +276,12 @@ button {
 
 /*About CSS*/
 .about-area {
-    background: linear-gradient(20deg, rgb(175 255 197 / 0%) 0%, rgb(183 255 196 / 10%) 0%, rgb(227 255 233) 100%);
+    background: linear-gradient(
+    90deg,
+    #E5FFF3 0%,
+    #FDF2EF 60%,
+    #FDF2EF 100%
+    );
     position: relative;
 }
 .about-area:before {
@@ -431,8 +436,12 @@ button {
 
 /*Award CSS*/
 .award-area {
-    background: linear-gradient(20deg, rgb(175 255 197 / 0%) 0%, rgb(183 255 196 / 10%) 0%, rgb(227 255 233) 100%);
-    position: relative;
+    background: linear-gradient(
+        90deg,
+        #E5FFF3 0%,
+        #FDF2EF 60%,
+        #FDF2EF 100%
+    );
     padding-bottom: 6rem;
 }
 .award-area .award-swiper {
@@ -476,6 +485,7 @@ button {
 .award-area .swiper-box .swiper-content {
     position: relative;
     background-color: #fff;
+    border-radius: 0rem 0rem 1.5rem 1.5rem;
 }
 .award-area .swiper-box .swiper-content:after {
     position: absolute;
@@ -486,6 +496,215 @@ button {
     width: 100%;
     height: 4rem;
     left: 0;
+}
+.award-area:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    background: url(../images/banner-line.png) no-repeat;
+    transform: rotate(180deg);
+}
+/*Advisor Area*/
+.advisor-area {
+    padding-bottom: 6rem;
+}
+.advisor-area .advisor-tree {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.advisor-area .title-box {
+    text-align: right;
+}
+.advisor-area .advisor-swiper h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding-top: 3rem;
+}
+.advisor-area .advisor-swiper h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    background: url(../images/program-bg.png) no-repeat;
+    background-position: center;
+    padding: 1rem;
+    margin: 2rem 0rem 2.5rem;
+}
+.advisor-area .advisor-swiper p {
+    font-size: 1.6rem;
+}
+.advisor-area .advisor-swiper {
+    padding-bottom: 4rem;
+}
+.advisor-area .swiper-box {
+    background-color: #fff;
+    border: 1px solid #33BFFF;
+    border-radius: 1.5rem;
+    position: relative;
+}
+.advisor-area .swiper-box p {
+    max-width: 23rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.4rem;
+}
+.advisor-area .swiper-box .swiper-content {
+    position: relative;
+    padding-bottom: 2rem;
+}
+.advisor-area .swiper-box .swiper-content:after {
+    position: absolute;
+    content: "";
+    background: url(../images/program-design.png) no-repeat;
+    background-position: center;
+    top: -4rem;
+    width: 100%;
+    height: 4rem;
+    left: 0;
+}
+.advisor-area .swiper-content p {
+    font-size: 1.6rem;
+    color: #666666;
+    margin-bottom: 1rem;
+}
+.advisor-area .swiper-content p span {
+    color: #33BFFF;
+    margin-right: 0.5rem;
+}
+/*Advisor Area*/
+/*Gallery Area*/
+.gallery-area .swiper-slide:nth-child(2n) .slide-inner {
+  transform: translateY(40px);
+}
+.gallery-area .swiper-slide:nth-child(3n) .slide-inner {
+  transform: translateY(80px);
+}
+.gallery-area .swiper-slide {
+  padding-bottom: 10rem;
+}
+.gallery-area .slide-inner {
+  transition: 0.4s ease;
+}
+/*Gallery Area*/
+/*Events Area*/
+.events-area .swiper-box .swiper-pic {
+    position: relative;
+}
+.events-area .swiper-box .swiper-pic span {
+    background-color: var(--ss-primary);
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: 0.3rem solid #fff;
+    border-radius: 5rem;
+    position: absolute;
+    left: 2rem;
+    bottom: -2.2rem;
+}
+.events-area .swiper-box .swiper-content h3 {
+    font-size: 2.2rem;
+    color: #000;
+    margin-bottom: 2rem;
+}
+.events-area .swiper-box .swiper-content p {
+    font-size: 1.6rem;
+    color: #666666;
+    margin-bottom: 3rem;
+}
+.events-area .swiper-box .swiper-content h5 {
+    font-size: 1.4rem;
+    color: #666666;
+}
+.events-area .swiper-box .swiper-content h5 span {
+    color: var(--ss-primary);
+}
+.events-area .swiper-slide:nth-child(4n+1) .swiper-content h5 span {
+    color: #33BFFF;
+}
+.events-area .swiper-slide:nth-child(4n+2) .swiper-content h5 span {
+    color: #EB3EA9;
+}
+.events-area .swiper-slide:nth-child(4n+3) .swiper-content h5 span {
+    color: #FF922E;
+}
+.events-area .swiper-slide:nth-child(4n+4) .swiper-content h5 span {
+    color: #307AD5;
+}
+.events-area .swiper-slide:nth-child(4n+1) .swiper-pic span {
+    background-color: #33BFFF;
+}
+.events-area .swiper-slide:nth-child(4n+2) .swiper-pic span {
+    background-color: #EB3EA9;
+}
+.events-area .swiper-slide:nth-child(4n+3) .swiper-pic span {
+    background-color: #FF922E;
+}
+.events-area .swiper-slide:nth-child(4n+4) .swiper-pic span {
+    background-color: #307AD5;
+}
+.events-area .swiper-box .swiper-content .events-btn {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--ss-primary);
+    border-radius: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    right: 3%;
+    bottom: 2%;
+}
+.events-area .swiper-slide:nth-child(4n+1) .swiper-box .events-btn {
+    background-color: #33BFFF;
+}
+.events-area .swiper-slide:nth-child(4n+2) .swiper-box .events-btn {
+    background-color: #EB3EA9;
+}
+.events-area .swiper-slide:nth-child(4n+3) .swiper-box .events-btn {
+    background-color: #FF922E;
+}
+.events-area .swiper-slide:nth-child(4n+4) .swiper-box .events-btn {
+    background-color: #307AD5;
+}
+.events-area .swiper-box {
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 0rem 0rem 3.5rem;
+}
+.events-area .swiper-content {
+    padding: 5rem 2rem 2rem;
+}
+.events-area {
+    padding-bottom: 6rem;
+}
+.events-area .events-swiper {
+    padding-bottom: 4rem;
+}
+.gallery-events-area {
+    background: linear-gradient(
+  90deg,
+  rgba(229,255,243,0) 0%,
+  #FDF2EF 40%,
+  #FFFFFF 100%
+);
+position: relative;
+}
+.gallery-events-area::before {
+    content: "";
+    position: absolute;
+    background: url(../images/banner-line.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+}
+.gallery-area {
+    padding-top: 10rem;
+}
+.gallery-area .gallery-bg {
+    position: absolute;
+    top: 50%;
 }
 /*Resposive CSS*/
 @media (min-width: 1700px) {

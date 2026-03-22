@@ -71,3 +71,114 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 //About Slider
+
+//Advisor Slider
+document.addEventListener("DOMContentLoaded", function () {
+
+  new Swiper(".advisor-swiper", {
+    loop: true,
+    speed: 800,                  
+    spaceBetween: 24,
+
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    grabCursor: false,
+
+    slidesPerView: "auto",         
+    freeMode: true,                
+    freeModeMomentum: false,
+
+    breakpoints: {
+      320: { slidesPerView: 1, },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1440: { slidesPerView: 4 },
+    },
+  });
+});
+//About Slider
+
+//Gallery Slider
+document.addEventListener("DOMContentLoaded", function () {
+
+  new Swiper(".gallery-swiper", {
+    loop: true,
+    speed: 800,                  
+    spaceBetween: 24,
+
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    grabCursor: false,
+
+    slidesPerView: "auto",         
+    freeMode: true,                
+    freeModeMomentum: false,
+
+    breakpoints: {
+      320: { slidesPerView: 1, },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1440: { slidesPerView: 4 },
+    },
+  });
+});
+//Gallery Slider
+
+//Events Slider
+document.addEventListener("DOMContentLoaded", function () {
+
+  new Swiper(".events-swiper", {
+    loop: true,
+    speed: 800,                  
+    spaceBetween: 24,
+
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    grabCursor: false,
+
+    slidesPerView: "auto",         
+    freeMode: true,                
+    freeModeMomentum: false,
+
+    breakpoints: {
+      320: { slidesPerView: 1, },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1440: { slidesPerView: 3 },
+    },
+  });
+});
+//Gallery Slider
