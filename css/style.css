@@ -608,6 +608,9 @@ button {
 .gallery-area .swiper-slide:nth-child(3n) .slide-inner {
   transform: translateY(80px);
 }
+.gallery-area .gallery-content img {
+    width: 100%;
+}
 .gallery-area .swiper-slide {
   padding-bottom: 10rem;
 }
@@ -997,7 +1000,7 @@ button {
         line-height: 2.6rem;
     }
     .banner-area {
-        padding: 5rem 0rem 8rem;
+        padding: 7rem 0rem 12rem;
     }
     .title-box h4 {
         font-size: 2.5rem;
@@ -1057,6 +1060,37 @@ button {
     }
     .footer-area .footer-right .gallery-content img {
         border-radius: 0.5rem;
+    }
+    .activity-area .activity-box::after {
+        height: 4rem;
+    }
+    .activity-area .activity-box::before {
+        height: 4rem;
+    }
+    .about-area:before {
+        display: none;
+    }
+    .about-area .container {
+        padding: 0rem 2rem 0rem;
+    }
+    .about-area .container {
+        box-shadow: none;
+    }
+    .program-area .swiper-pic img {
+        width: 100%;
+    }
+    .award-area:after {
+        display: none;
+    }
+    .gallery-events-area::before {
+        display: none;
+    }
+    .gallery-area {
+        padding-top: 5rem;
+    }
+    .footer-area .copyright-text {
+        padding: 2rem 0rem;
+        margin-top: 2rem;
     }
 }
 @media screen and (max-width: 575px) {
