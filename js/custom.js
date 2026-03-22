@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       320: { slidesPerView: 1, },
       768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
+      1024: { slidesPerView: 2 },
       1440: { slidesPerView: 3 },
     },
   });

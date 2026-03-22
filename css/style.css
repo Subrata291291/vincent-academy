@@ -128,6 +128,16 @@ button {
     text-align: right;
     font-size: 1.4rem;
 }
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marqueeMove 12s linear infinite;
+}
 .header-area .sidenav button {
     border: none;
     background-color: #E1E6F0;
@@ -162,6 +172,16 @@ button {
 }
 .header-area .navbar-nav a:hover {
     color: var(--ss-primary);
+}
+.header-area .navbar-nav .dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+}
+.header-area .navbar-nav .dropdown-menu .dropdown-item {
+    padding: 1rem 2rem;
+}
+.header-area .common-btn {
+    margin-left: 2.5rem;
 }
 /*Header CSS*/
 
@@ -232,7 +252,7 @@ button {
 .activity-area .activity-box::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -5px;
     background: url(../images/activity-effect.png) no-repeat;
     width: 100%;
     height: 3rem;
@@ -244,7 +264,7 @@ button {
 .activity-area .activity-box::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     background: url(../images/activity-effect.png) no-repeat;
     width: 100%;
     height: 3rem;
@@ -443,6 +463,7 @@ button {
         #FDF2EF 100%
     );
     padding-bottom: 6rem;
+    z-index: 1;
 }
 .award-area .award-swiper {
     padding-bottom: 4rem;
@@ -450,6 +471,7 @@ button {
 .award-area .cap-pic {
     position: absolute;
     right: 5%;
+    z-index: -1;
 }
 .award-area .title-box {
     max-width: 90rem;
@@ -682,12 +704,12 @@ button {
 }
 .gallery-events-area {
     background: linear-gradient(
-  90deg,
-  rgba(229,255,243,0) 0%,
-  #FDF2EF 40%,
-  #FFFFFF 100%
-);
-position: relative;
+    90deg,
+    rgba(229,255,243,0) 0%,
+    #FDF2EF 40%,
+    #FFFFFF 100%
+    );
+    position: relative;
 }
 .gallery-events-area::before {
     content: "";
@@ -706,6 +728,95 @@ position: relative;
     position: absolute;
     top: 50%;
 }
+/*Events Area*/
+/*Footer Area*/
+.footer-area {
+    background: url(../images/footer-bg.png) no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 29rem;
+}
+.footer-area .footer-left p {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    max-width: 40rem;
+}
+.footer-area .footer-left ul li button {
+    background-color: #fff;
+    color: #000;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-area .footer-left ul {
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.footer-area .footer-left ul li button:hover {
+    background-color: var(--ss-secondary);
+}
+.footer-area .footer-left .cloud-pic {
+    right: 0;
+    animation: floatCloud 6s ease-in-out infinite;
+}
+.footer-area .footer-left .play-girl {
+    right: -7rem;
+    bottom: -4rem;
+    animation: girlMove 3s ease-in-out infinite;
+}
+.footer-area .footer-middle .footer-links ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.footer-area .footer-middle .footer-links ul li a {
+    font-size: 1.6rem;
+}
+.footer-area .footer-middle .footer-links h3 {
+    color: var(--ss-secondary);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.footer-area .footer-middle .row {
+    gap: 8rem;
+}
+.footer-area .footer-right h3 {
+    color: var(--ss-secondary);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.footer-area .footer-right .row {
+    margin-top: 3rem;
+    row-gap: 1.5rem;
+}
+.footer-area .footer-right .gallery-content img {
+    max-height: 9rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+.footer-area .copyright-text {
+    font-size: 1.4rem;
+    color: #fff;
+    border-top: 1px solid #CECECE;
+    padding: 4rem 0rem;
+    margin-top: 4rem;
+}
+.footer-area .copyright-text span {
+    color: var(--ss-secondary);
+}
+.footer-area .footer-middle .play-boy {
+    right: 4rem;
+    bottom: -9rem;
+    animation: boyFloat 3s ease-in-out infinite;
+}
+
 /*Resposive CSS*/
 @media (min-width: 1700px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -713,22 +824,107 @@ position: relative;
   }
 }
 @media (max-width: 1700px) {
-    
+    .about-area .container {
+        padding: 0rem 5rem 4rem;
+    }
+    .about-area .about-right .title-box {
+        margin-bottom: 3rem;
+    }
 }
 @media (max-width: 1399px) {
-    
 }
 @media (min-width: 1400px) {
-
+    .about-area .row {
+        align-items: end;
+    }
 }
 @media (max-width: 1199px) {
-    
+    .topbar-area .topbar-left ul {
+        gap: 1rem;
+        justify-content: center;
+    }
+    .banner-area .banner-content h1 {
+        font-size: 5rem;
+    }
+    .banner-area {
+        padding: 12rem 0rem;
+    }
+    .activity-area .activity-box {
+        padding: 7rem 2rem;
+    }
+    .activity-area .activity-box::before {
+        top: -12px;
+    }
+    .activity-area .activity-box::after {
+        bottom: -12px;
+    }
+    .about-left {
+        height: 100%;
+    }
+    .about-left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .about-area .row {
+        align-items: stretch;
+    }
+    .about-area .container {
+        padding: 4rem 2rem 4rem;
+    }
+    .footer-area .footer-left .play-girl {
+        display: none;
+    }
+    .footer-area .footer-middle .play-boy {
+        right: -5rem;
+        bottom: -11rem;
+    }
 }
 @media screen and (max-width: 991px) {
-    
+    .offcanvas .dropdown-menu {
+        position: static !important;
+        float: none;
+        width: 100%;
+        transform: translate3d(0px, 0px, 0px) !important;
+  }
+  .offcanvas ul li a {
+    font-size: 1.6rem;
+  }
+  .offcanvas ul li {
+    border-bottom: 1px solid var(--ss-primary);
+    padding: 1rem 0rem;
+  }
+  .header-area .navbar-nav {
+        gap: 0;
+    }
+    .dropdown-menu {
+        border: none;
+        background-color: #f6f6f6;
+    }
+    .dropdown-menu li {
+        padding: 0 !important;
+        border: none !important;
+    }
+    .offcanvas ul li:last-child {
+        border-bottom: 0px solid var(--ss-primary);
+  }
 }
 @media screen and (min-width: 992px) {
-
+    .header-area .navbar-nav .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+  }
+  .header-area .navbar-nav .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .header-area .navbar .dropdown-menu {
+    top: calc(100% + 3.6rem);
+  }
 }
 @media screen and (min-width: 768px) {
 

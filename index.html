@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/fancybox.min.css">
+    <link rel="stylesheet" href="css/animations.css">
     <!-- Stylesheets -->
     <!--Swiper css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -44,7 +45,7 @@
   <section class="topbar-area">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-6">
+        <div class="col-lg-12 col-xl-9 d-none d-lg-block">
           <div class="topbar-left">
             <ul class="d-flex">
               <li>
@@ -65,9 +66,11 @@
             </ul>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-3 col-xl-3 d-lg-none d-xl-block">
           <div class="topbar-right">
-            <p> 25 Jan, 25 | PARENTS TEACHER MEETING </p>
+            <div class="marquee">
+              <p> 25 Jan, 25 | PARENTS TEACHER MEETING </p>
+            </div>
           </div>
         </div>
       </div>
@@ -81,9 +84,6 @@
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -93,14 +93,12 @@
                 <a class="nav-link" href="#">Admissions</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                   Our School
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -114,12 +112,15 @@
               </li>
             </ul>
           </div>
-          <div class="sidenav">
+          <div class="sidenav-desk sidenav d-none d-lg-block">
             <button class="sidenav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="ri-menu-3-line"></i></button>
+          </div>
+          <div class="sidenav-mb sidenav d-lg-none">
+            <button class="sidenav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMobile" aria-controls="offcanvasMobile"><i class="ri-menu-3-line"></i></button>
           </div>
         </div>
     </nav>
-    <!--Sidebar-->
+    <!--Sidebar Desk-->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
         <h5 id="offcanvasRightLabel">Offcanvas right</h5>
@@ -127,6 +128,37 @@
       </div>
       <div class="offcanvas-body">
         ...
+      </div>
+    </div>
+    <!--Sidebar-->
+    <!--Sidebar Mobile-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMobile">
+      <div class="offcanvas-header">
+        <h5></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Admissions</a>
+          </li>
+          <!--DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Our School
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another Action</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
     <!--Sidebar-->
@@ -199,7 +231,7 @@
   <!--About Area-->
   <section class="about-area p-100">
     <div class="container">
-      <div class="row align-items-end">
+      <div class="row">
         <div class="col-md-5">
           <div class="about-left">
             <img src="images/about-pic.png" alt="">
@@ -599,6 +631,7 @@
       </div>
     </div>
   </section>
+  <!--Gallery Area-->
   <!--Events Area-->
   <section class="events-area p-100 position-relative">
     <div class="container">
@@ -689,6 +722,135 @@
     </div>
   </section>
   <!--Events Area-->
+  </section>
+  <!--Footer Area-->
+  <section class="footer-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-left position-relative">
+            <img src="images/cloud.png" alt="" class="cloud-pic position-absolute">
+            <img src="images/pencil_girl.png" alt="" class="play-girl position-absolute">
+            <img src="images/footer-logo.png" alt="">
+            <p>
+              St.Vincent's Academy, Purba Bardhaman owned by krishnam foundation, founded in 2023, Chaired by Chairman Mr.Sanjay kumar Gupta.
+            </p>
+            <ul class="d-flex">
+              <li>
+                <button><i class="ri-facebook-line"></i></button>
+              </li>
+              <li>
+                <button><i class="ri-twitter-x-line"></i></button>
+              </li>
+              <li>
+                <button><i class="ri-instagram-line"></i></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="footer-middle position-relative">
+            <img src="images/pencil_boy.png" alt="" class="position-absolute play-boy">
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <div class="footer-links">
+                  <h3>Pages</h3>
+                  <ul class="d-flex">
+                    <li>
+                      <a href="#">Our School</a>
+                    </li>
+                    <li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Admissions</a>
+                    </li>
+                    <li>
+                      <a href="#">Events</a>
+                    </li>
+                    <li>
+                      <a href="#">Activity</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="footer-links">
+                  <h3>Help Desk</h3>
+                  <ul class="d-flex">
+                    <li>
+                      <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                      <a href="#">Job Openings</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Transport</a>
+                    </li>
+                    <li>
+                      <a href="#">Awards</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-right">
+            <h3>Our Gallery</h3>
+            <div class="row">
+              <div class="col-4">
+                <div class="gallery-content" style="display: block;">
+                  <a href="images/gallery-2.png" data-fancybox="mygallery" data-caption="" title="">
+                    <img src="images/gallery-2.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="gallery-content" style="display: block;">
+                  <a href="images/gallery-2.png" data-fancybox="mygallery" data-caption="" title="">
+                    <img src="images/gallery-2.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="gallery-content" style="display: block;">
+                  <a href="images/gallery-3.png" data-fancybox="mygallery" data-caption="" title="">
+                    <img src="images/gallery-3.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="gallery-content" style="display: block;">
+                  <a href="images/gallery-4.png" data-fancybox="mygallery" data-caption="" title="">
+                    <img src="images/gallery-4.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="gallery-content" style="display: block;">
+                  <a href="images/gallery-1.png" data-fancybox="mygallery" data-caption="" title="">
+                    <img src="images/gallery-1.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="gallery-content" style="display: block;">
+                  <a href="images/gallery-2.png" data-fancybox="mygallery" data-caption="" title="">
+                    <img src="images/gallery-2.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright-text text-center">Copyright © 2026 St. <span>Vincent Academy</span>. All Rights Reserved.</p>
+    </div>
   </section>
 
 
