@@ -1092,6 +1092,24 @@ button {
         padding: 2rem 0rem;
         margin-top: 2rem;
     }
+    .banner-area:after {
+        bottom: -1px;
+    }
+    .activity-area .activity-box::before {
+        display: none;
+    }
+    .activity-area .activity-box::after {
+        display: none;
+    }
+    .activity-area .activity-box {
+        padding: 4rem 2rem;
+        border-radius: 0.5rem;
+    }
+    .advisor-area .swiper-box .swiper-content:after {
+        background-size: cover;
+        height: 6rem;
+        top: -6rem;
+    }
 }
 @media screen and (max-width: 575px) {
     
