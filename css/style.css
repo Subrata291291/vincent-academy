@@ -356,11 +356,13 @@ button {
 /*Program CSS*/
 .program-area {
     padding-bottom: 6rem;
+    z-index: 1;
 }
 .program-area .program-boy {
     position: absolute;
     top: 10%;
     left: 0;
+    z-index: -1;
 }
 .program-area .title-box {
     text-align: right;
@@ -1106,6 +1108,11 @@ button {
         border-radius: 0.5rem;
     }
     .advisor-area .swiper-box .swiper-content:after {
+        background-size: cover;
+        height: 6rem;
+        top: -6rem;
+    }
+    .program-area .swiper-box .swiper-content:after {
         background-size: cover;
         height: 6rem;
         top: -6rem;
