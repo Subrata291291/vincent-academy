@@ -773,7 +773,7 @@ button {
 }
 .footer-area .footer-left .cloud-pic {
     right: 0;
-    animation: floatCloud 6s ease-in-out infinite;
+    animation: floatCloud 4s ease-in-out infinite;
 }
 .footer-area .footer-left .play-girl {
     right: -7rem;
