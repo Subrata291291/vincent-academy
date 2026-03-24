@@ -289,8 +289,10 @@ button {
 }
 .activity-area .activity-boy {
     top: 0;
-    right: 0;
-    z-index: -1;
+    right: 1%;
+    /* z-index: -1; */
+    animation: boyMove 3s ease-in-out infinite;
+    transform-origin: bottom center;
 }
 /*Activity CSS*/
 
@@ -363,6 +365,8 @@ button {
     top: 10%;
     left: 0;
     z-index: -1;
+    transform-origin: center;
+    animation: skyMotion 6s ease-in-out infinite;
 }
 .program-area .title-box {
     text-align: right;
@@ -474,6 +478,8 @@ button {
     position: absolute;
     right: 5%;
     z-index: -1;
+    transform-origin: center;
+    animation: capFloat 4s ease-in-out infinite;
 }
 .award-area .title-box {
     max-width: 90rem;
@@ -540,6 +546,7 @@ button {
     top: 0;
     left: 0;
     z-index: -1;
+    animation: treeFloat 6s ease-in-out infinite;
 }
 .advisor-area .swiper-box img {
     width: 100%;
@@ -923,6 +930,7 @@ button {
     }
     .activity-area .activity-boy {
         max-width: 30%;
+        z-index: -1;
     }
     .p-100 {
         padding: 5rem 0rem;
