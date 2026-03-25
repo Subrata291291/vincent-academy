@@ -19,6 +19,16 @@ body {
   color: #000;
   overflow-x: hidden;
 }
+.banner-area,
+.about-area,
+.activity-area,
+.program-area,
+.award-area,
+.advisor-area,
+.events-area,
+.footer-area {
+  overflow-x: hidden;
+}
 ul, li, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
