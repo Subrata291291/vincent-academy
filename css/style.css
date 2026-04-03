@@ -25,7 +25,6 @@ body {
 .program-area,
 .award-area,
 .advisor-area,
-.events-area,
 .footer-area {
   overflow-x: hidden;
 }
@@ -204,6 +203,11 @@ button {
     padding: 15rem 0rem;
     position: relative;
 }
+.banner-area .banner-top-pic {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .banner-area:before {
     content: "";
     position: absolute;
@@ -219,7 +223,8 @@ button {
     bottom: 0;
     width: 100%;
     height: 2rem;
-    background: url(../images/wave-section-break.png) no-repeat;
+    background: url(../images/section-notch-top.png) no-repeat;
+    transform: rotate(180deg);
 }
 .banner-area .banner-content {
     max-width: 67rem;
@@ -328,13 +333,12 @@ button {
 .about-area:before {
     content: "";
     position: absolute;
-    background: url(../images/wave-section-break.png) no-repeat;
+    background: url(../images/section-notch-top.png) no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 2rem;
     top: -1px;
-    transform: rotate(180deg);
 }
 .about-area .container {
     padding: 0rem 10rem 8rem;
@@ -553,7 +557,8 @@ button {
     bottom: 0;
     width: 100%;
     height: 2rem;
-    background: url(../images/wave-section-break.png) no-repeat;
+    transform: rotate(180deg);
+    background: url(../images/section-notch-top.png) no-repeat;
 }
 /*Advisor Area*/
 .advisor-area {
@@ -653,12 +658,13 @@ button {
 .events-area:before {
     content: "";
     position: absolute;
-    background: url(../images/wave-section-break.png) no-repeat;
+    background: url(../images/section-notch-top.png) no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 2rem;
     bottom: -1px;
+    transform: rotate(180deg);
 }
 .events-area .swiper-box .swiper-pic span {
     background-color: var(--ss-primary);
@@ -760,13 +766,12 @@ button {
 .gallery-events-area::before {
     content: "";
     position: absolute;
-    background: url(../images/wave-section-break.png) no-repeat;
+    background: url(../images/section-notch-top.png) no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 2rem;
     top: -1px;
-    transform: rotate(180deg);
 }
 .gallery-area {
     padding-top: 10rem;
@@ -851,7 +856,7 @@ button {
 .footer-area .copyright-text {
     font-size: 1.4rem;
     color: #fff;
-    border-top: 1px solid #CECECE;
+    border-top: 1px solid #61ff64;
     padding: 4rem 0rem;
     margin-top: 4rem;
 }
@@ -869,6 +874,7 @@ button {
     background: url(../images/banner.png) no-repeat;
     background-size: cover;
     background-position: bottom;
+    background-attachment: fixed;
 }
 .common-banner .sun-pic {
     top: 50%;
@@ -889,7 +895,17 @@ button {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #000000cc;
+    background-color: #00000047;
+}
+.common-banner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2rem;
+    background: url(../images/section-notch-top.png) no-repeat;
 }
 .common-banner ul {
     justify-content: center;
@@ -913,7 +929,13 @@ button {
     position: relative;
     color: #fff;
 }
-
+.vision-area .vision-left .title-box {
+    margin-bottom: 2rem;
+}
+.vision-area .vision-left p {
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+}
 /*Resposive CSS*/
 @media (min-width: 1700px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
