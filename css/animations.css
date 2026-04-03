@@ -130,3 +130,43 @@
     transform: translateY(0px) translateX(0px);
   }
 }
+
+@keyframes wind-blow {
+  0% {
+    transform-origin: 50% 100%;
+    transform: skewX(-2deg);
+  }
+  50% {
+    transform-origin: 50% 100%;
+    transform: skewX(2deg);
+  }
+  100% {
+    transform-origin: 50% 100%;
+    transform: skewX(-2deg);
+  }
+}
+
+@keyframes float-bob-y {
+  0% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

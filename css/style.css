@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --ss-poppins: "Poppins", sans-serif;
+  --ss-dynapuff: "DynaPuff", system-ui;
   --ss-font500: 500;
   --ss-font600: 600;
   --ss-font700: 700;
@@ -106,6 +107,7 @@ button {
     color: #000;
     font-size: 3.5rem;
     line-height: 5rem;
+    font-family: var(--ss-dynapuff);
 }
 .p-100 {
     padding: 10rem 0rem;
@@ -216,9 +218,8 @@ button {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 4rem;
-    transform: rotate(180deg);
-    background: url(../images/banner-line.png) no-repeat;
+    height: 2rem;
+    background: url(../images/wave-section-break.png) no-repeat;
 }
 .banner-area .banner-content {
     max-width: 67rem;
@@ -261,10 +262,10 @@ button {
 .activity-area .activity-box::before {
     content: "";
     position: absolute;
-    top: -5px;
-    background: url(../images/activity-effect.png) no-repeat;
+    top: -7px;
+    background: url(../images/wave-section-break.png) no-repeat;
     width: 100%;
-    height: 3rem;
+    height: 1rem;
     left: 0;
     right: 0;
     background-size: contain;
@@ -273,10 +274,10 @@ button {
 .activity-area .activity-box::after {
     content: "";
     position: absolute;
-    bottom: -5px;
-    background: url(../images/activity-effect.png) no-repeat;
+    bottom: -7px;
+    background: url(../images/wave-section-break.png) no-repeat;
     width: 100%;
-    height: 3rem;
+    height: 1rem;
     left: 0;
     right: 0;
     background-size: contain;
@@ -300,8 +301,17 @@ button {
     top: 0;
     right: 1%;
     /* z-index: -1; */
-    animation: boyMove 3s ease-in-out infinite;
+    /* animation: boyMove 3s ease-in-out infinite; */
+    animation-name: float-bob-y;
     transform-origin: bottom center;
+    -webkit-animation-name: float-bob-y;
+  animation-name: float-bob-y;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 /*Activity CSS*/
 
@@ -318,12 +328,13 @@ button {
 .about-area:before {
     content: "";
     position: absolute;
-    background: url(../images/banner-line.png) no-repeat;
+    background: url(../images/wave-section-break.png) no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 4rem;
-    top: 0;
+    height: 2rem;
+    top: -1px;
+    transform: rotate(180deg);
 }
 .about-area .container {
     padding: 0rem 10rem 8rem;
@@ -491,7 +502,7 @@ button {
     animation: capFloat 4s ease-in-out infinite;
 }
 .award-area .title-box {
-    max-width: 90rem;
+    max-width: 92rem;
 }
 .award-area .swiper-content h3 {
     color: #000;
@@ -541,9 +552,8 @@ button {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 4rem;
-    background: url(../images/banner-line.png) no-repeat;
-    transform: rotate(180deg);
+    height: 2rem;
+    background: url(../images/wave-section-break.png) no-repeat;
 }
 /*Advisor Area*/
 .advisor-area {
@@ -552,10 +562,10 @@ button {
 }
 .advisor-area .advisor-tree {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: -1;
-    animation: treeFloat 6s ease-in-out infinite;
+    animation: wind-blow 5s linear infinite;
 }
 .advisor-area .swiper-box img {
     width: 100%;
@@ -639,6 +649,16 @@ button {
 /*Events Area*/
 .events-area .swiper-box .swiper-pic {
     position: relative;
+}
+.events-area:before {
+    content: "";
+    position: absolute;
+    background: url(../images/wave-section-break.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 2rem;
+    bottom: -1px;
 }
 .events-area .swiper-box .swiper-pic span {
     background-color: var(--ss-primary);
@@ -740,12 +760,13 @@ button {
 .gallery-events-area::before {
     content: "";
     position: absolute;
-    background: url(../images/banner-line.png) no-repeat;
+    background: url(../images/wave-section-break.png) no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 4rem;
-    top: 0;
+    height: 2rem;
+    top: -1px;
+    transform: rotate(180deg);
 }
 .gallery-area {
     padding-top: 10rem;
@@ -841,6 +862,56 @@ button {
     right: 4rem;
     bottom: -9rem;
     animation: boyFloat 3s ease-in-out infinite;
+}
+/*Our Vision page CSS*/
+.common-banner {
+    padding: 12rem 0rem;
+    background: url(../images/banner.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.common-banner .sun-pic {
+    top: 50%;
+    right: 10%;
+    transform: translate(50%, -50%);
+    animation: capFloat 4s ease-in-out infinite;
+}
+.common-banner .perasute-pic {
+    top: 50%;
+    left: 20%;
+    transform: translate(50%, -50%);
+    animation: rotate2 14s linear infinite;
+}
+.common-banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000cc;
+}
+.common-banner ul {
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    position: relative;
+}
+.common-banner ul li {
+    color: #fff;
+}
+.common-banner ul li a {
+    font-size: 1.6rem;
+    color: #fff;
+}
+.common-banner ul li.active a {
+    color: var(--ss-secondary);
+}
+.common-banner h2 {
+    font-size: 5rem;
+    font-family: var(--ss-dynapuff);
+    position: relative;
+    color: #fff;
 }
 
 /*Resposive CSS*/
