@@ -49,6 +49,10 @@ a {
 a:hover {
     color: var(--ss-secondary);
 }
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #ff9c00;
+    background-image: linear-gradient(145deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
+}
 button {
     border: none;
     background-color: transparent;
@@ -57,7 +61,8 @@ button {
     padding: 0.7rem 2.5rem;
     color: #fff;
     font-size: 1.8rem;
-    background: var(--ss-primary);
+    background-color: #ff9c00;
+    background-image: linear-gradient(145deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
     border: none;
     border-radius: 5rem;
     display: flex;
@@ -78,20 +83,14 @@ button {
     position: absolute;
     left: 0;
     width: 0px;
-    background-color: var(--ss-secondary);
+    background-color: #ff9c00;
+    background-image: linear-gradient(0deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
     height: 100%;
     transition: all 0.3s;
     z-index: -1;
 }
 .common-btn:hover:before {
     width: 100%;
-}
-.common-btn:hover span {
-    color: var(--ss-primary) !important;
-    transition: all 0.3s;
-}
-.common-btn:hover {
-    color: #000;
 }
 .title-box {
     margin-bottom: 6rem;
@@ -116,7 +115,8 @@ button {
 }
 /*Header CSS*/
 .topbar-area {
-    background-color: var(--ss-primary);
+    background-color: #ff9c00;
+    background-image: linear-gradient(145deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
     padding: 1rem 0rem;
     color: #fff;
 }
@@ -187,6 +187,11 @@ button {
     padding: 0;
     border-radius: 0;
 }
+.header-area .navbar-nav .dropdown-menu a:hover {
+    background-color: #ff9c00;
+    background-image: linear-gradient(145deg, rgb(35, 204, 136) 0%, rgb(142, 207, 53) 100%);
+    color: #fff;
+}
 .header-area .navbar-nav .dropdown-menu .dropdown-item {
     padding: 1rem 2rem;
 }
@@ -233,9 +238,6 @@ button {
 .banner-area .banner-content h1 {
     font-size: 7rem;
     color: #fff;
-}
-.banner-area .banner-content span {
-    color: var(--ss-secondary);
 }
 .banner-area .banner-content p {
     color: #fff;
@@ -787,6 +789,7 @@ button {
     background-position: top;
     background-size: cover;
     padding-top: 29rem;
+    position: relative;
 }
 .footer-area .footer-left p {
     color: #fff;
