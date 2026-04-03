@@ -344,7 +344,7 @@ button {
 }
 .about-area .container {
     padding: 0rem 10rem 8rem;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 0rem 0rem 1.5rem 1.5rem;
 }
 .about-area .about-left img {
@@ -524,7 +524,7 @@ button {
     margin: 1.5rem 0rem 2rem;
 }
 .award-area .swiper-box {
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 1.5rem;
 }
 .award-area .swiper-box ul {
@@ -645,6 +645,8 @@ button {
 }
 .gallery-area .gallery-content img {
     width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
 }
 .gallery-area .swiper-slide {
   padding-bottom: 10rem;
@@ -744,7 +746,7 @@ button {
     background-color: #307AD5;
 }
 .events-area .swiper-box {
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 0rem 0rem 3.5rem;
 }
 .events-area .swiper-content {
@@ -871,7 +873,7 @@ button {
     bottom: -9rem;
     animation: boyFloat 3s ease-in-out infinite;
 }
-/*Our Vision page CSS*/
+/*Common Banner CSS*/
 .common-banner {
     padding: 12rem 0rem;
     background: url(../images/banner.png) no-repeat;
@@ -903,7 +905,7 @@ button {
 .common-banner:after {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     right: 0;
     width: 100%;
@@ -932,11 +934,112 @@ button {
     position: relative;
     color: #fff;
 }
+.common-banner .commpon-shape-pic {
+    bottom: -1px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    transform: rotate(180deg);
+    height: 2rem;
+    object-fit: cover;
+}
+/*Our Vision page CSS*/
 .vision-area .vision-left .title-box {
     margin-bottom: 2rem;
 }
 .vision-area .vision-left p {
     font-size: 1.7rem;
+    line-height: 2.8rem;
+}
+.vision-area .vision-left .vision-box {
+    margin-top: 4rem;
+}
+.vision-area .vision-left .vision-box p {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+}
+.vision-area .vision-left .vision-box ul {
+    gap: 2rem;
+}
+.vision-area .vision-left .vision-box ul li i {
+    font-size: 5rem;
+    background-color: #22a6523b;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11rem;
+}
+.vision-area .vision-left .vision-box ul li h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.vision-area .vision-left .common-btn {
+    margin-top: 5rem;
+}
+.vision-area .butterfly-pic {
+    right: 2%;
+    top: 20%;
+    animation: flyButterfly 6s ease-in-out infinite;
+    max-width: 5rem;
+}
+/*Our Vision page CSS*/
+
+/*Invest Area CSS*/
+.invest-area {
+    background: linear-gradient(90deg, #E5FFF3 0%, #FDF2EF 60%, #FDF2EF 100%);
+}
+.invest-area .stat-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem;
+  border: 1px solid #eee;
+  border-radius: 1.2rem;
+  background: #fff;
+  transition: 0.3s;
+}
+.invest-area .stat-box:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transform: translateY(-5px);
+}
+.invest-area .stat-box .icon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.5rem;
+}
+.invest-area .icon.orange { background: #f7931e; }
+.invest-area .icon.pink   { background: #e91e63; }
+.invest-area .icon.green  { background: #4caf50; }
+.invest-area .icon.teal   { background: #20b2aa; }
+.invest-area .stat-box .content h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+.invest-area .stat-box .content p {
+  margin: 0;
+  color: #666;
+  font-size: 1.4rem;
+}
+.invest-area .invest-left .title-box {
+    margin-bottom: 2rem;
+}
+.invest-area .invest-left {
+    padding-right: 6rem;
+}
+.invest-area .invest-left .common-btn {
+    margin-top: 5rem;
+}
+.invest-area .invest-left p {
+    font-size: 1.6rem;
     line-height: 2.8rem;
 }
 /*Resposive CSS*/
@@ -954,6 +1057,12 @@ button {
     }
 }
 @media (max-width: 1399px) {
+    .header-area .navbar-nav {
+        gap: 1.5rem;
+    }
+    .header-area .navbar a {
+        font-size: 1.5rem;
+    }
 }
 @media (min-width: 1400px) {
     .about-area .row {
@@ -964,6 +1073,12 @@ button {
     .topbar-area .topbar-left ul {
         gap: 1rem;
         justify-content: center;
+    }
+    .header-area .navbar-nav {
+        gap: 0.8rem;
+    }
+    .header-area .navbar a {
+        font-size: 1.3rem;
     }
     .banner-area .banner-content h1 {
         font-size: 5rem;
@@ -1016,6 +1131,15 @@ button {
     border-bottom: 1px solid var(--ss-primary);
     padding: 1rem 0rem;
   }
+  .common-banner {
+        padding: 6rem 0rem;
+    }
+    .common-banner h2 {
+        font-size: 4rem;
+    }
+    .invest-area .invest-right {
+        margin-top: 5rem;
+    }
   .header-area .navbar-nav {
         gap: 0;
     }
@@ -1082,6 +1206,16 @@ button {
     }
     .footer-area .footer-left .cloud-pic {
         right: 40%;
+    }
+    .invest-area .invest-left {
+        padding-right: 0rem;
+    }
+    .invest-area .invest-left .common-btn {
+        margin-top: 3rem;
+    }
+    .vision-area .vision-left .vision-box ul {
+        border: 1px solid #22a6523b;
+        padding: 1rem;
     }
 }
 @media screen and (min-width: 992px) {
@@ -1229,6 +1363,13 @@ button {
         background-size: cover;
         height: 6rem;
         top: -6rem;
+    }
+    .vision-area .vision-left .vision-box ul li i {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    .vision-area .vision-left .common-btn {
+        margin-top: 3rem;
     }
 }
 @media screen and (max-width: 575px) {
