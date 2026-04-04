@@ -503,6 +503,9 @@ button {
     padding-bottom: 6rem;
     z-index: 1;
 }
+.award-page-area {
+    background: none;
+}
 .award-area .award-swiper {
     padding-bottom: 4rem;
 }
@@ -1209,6 +1212,54 @@ button {
 .chairman-message-area .swiper-pagination {
   display: none;
 }
+/*Chairman message page CSS*/
+
+/*Gallery page CSS*/
+.gallery-area .gallery-tabs {
+    margin-bottom: 4rem;
+}
+.gallery-area .gallery-tabs .nav-link {
+  background: #e9e3e0;
+  color: #333;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  margin: 0.5rem;
+  font-weight: 600;
+}
+.gallery-area .gallery-tabs .nav-link.active {
+  background: #f24c2f;
+  color: #fff;
+}
+/* Masonry Layout */
+.gallery-area .gallery-masonry {
+  column-count: 4;
+  column-gap: 1.5rem;
+}
+.gallery-area .gallery-item {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+    transition: 0.3s;
+    overflow: hidden;
+    height: 25rem;
+    object-fit: cover;
+}
+.gallery-area .gallery-item img {
+  width: 100%;
+  border-radius: 1rem;
+  display: block;
+  transition: 0.4s;
+  height: 100%;
+}
+.gallery-area .gallery-item:hover img {
+  transform: scale(1.05);
+}
+/* Hide items */
+.gallery-area .gallery-item.hide {
+  display: none;
+}
+
+
+
 /*Resposive CSS*/
 @media (min-width: 1700px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -1288,6 +1339,12 @@ button {
     }
     .chairman-message-area .cm-content .quote-icon {
         font-size: 7rem;
+    }
+    .gallery-area .gallery-item {
+        height: auto;
+    }
+    .gallery-area .gallery-masonry {
+        column-count: 3;
     }
 }
 @media screen and (max-width: 991px) {
@@ -1588,7 +1645,9 @@ button {
         font-size: 5rem;
         top: -1rem;
     }
-
+    .gallery-area .gallery-masonry {
+        column-count: 2;
+    }
 }
 @media screen and (max-width: 575px) {
     

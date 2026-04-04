@@ -227,18 +227,118 @@
   <!--Header Area-->
   <!--Common banner-->
   <section class="common-banner text-center position-relative">
-    <h2>Calender</h2>
+    <h2>Gallery</h2>
     <ul class="d-flex">
         <li><a href="#">Home</a></li>
         <li>//</li>
-        <li class="active"><a href="#">Calender</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
     </ul>
     <img src="images/section-notch-top.png" alt="" class="commpon-shape-pic position-absolute">
     <!-- <img src="images/sun.png" alt="" class="sun-pic position-absolute"> -->
   </section>
   <!--Common banner-->
-
-
+  <!--Gallery Area-->
+  <section class="gallery-area p-100">
+    <div class="container">
+      <!-- Tabs -->
+      <ul class="nav nav-pills justify-content-center gallery-tabs">
+        <li class="nav-item">
+          <button class="nav-link active" data-filter="all">All</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-filter="school">School</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-filter="lab">Laboratory</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-filter="admission">Admissions Open 2026</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-filter="facilities">Facilities</button>
+        </li>
+      </ul>
+      <!-- Masonry Gallery -->
+      <div class="gallery-masonry">
+        <div class="gallery-item school">
+          <a href="images/gallery10.webp" data-fancybox="gallery">
+            <img src="images/gallery10.webp" alt="">
+          </a>
+        </div>
+        <div class="gallery-item lab">
+          <a href="images/gallery-1.png" data-fancybox="gallery">
+            <img src="images/gallery-1.png" alt="">
+          </a>
+        </div>
+        <div class="gallery-item admission">
+          <a href="images/gallery-2.png" data-fancybox="gallery">
+            <img src="images/gallery-2.png" alt="">
+          </a>
+        </div>
+        <div class="gallery-item facilities">
+          <a href="images/gallery-3.png" data-fancybox="gallery">
+            <img src="images/gallery-3.png" alt="">
+          </a>
+        </div>
+        <div class="gallery-item school">
+          <a href="images/gallery-4.png" data-fancybox="gallery">
+            <img src="images/gallery-4.png" alt="">
+          </a>
+        </div>
+        <div class="gallery-item lab">
+          <a href="images/gallery-5.png" data-fancybox="gallery">
+            <img src="images/gallery-5.png" alt="">
+          </a>
+        </div>
+        <div class="gallery-item admission">
+          <a href="images/gallery6.webp" data-fancybox="gallery">
+            <img src="images/gallery6.webp" alt="">
+          </a>
+        </div>
+        <div class="gallery-item facilities">
+          <a href="images/gallery7.webp" data-fancybox="gallery">
+            <img src="images/gallery7.webp" alt="">
+          </a>
+        </div>
+        <div class="gallery-item admission">
+          <a href="images/gallery8.webp" data-fancybox="gallery">
+            <img src="images/gallery8.webp" alt="">
+          </a>
+        </div>
+        <div class="gallery-item facilities">
+          <a href="images/gallery9.webp" data-fancybox="gallery">
+            <img src="images/gallery9.webp" alt="">
+          </a>
+        </div>
+        <div class="gallery-item school">
+          <a href="images/gallery10.webp" data-fancybox="gallery">
+            <img src="images/gallery10.webp" alt="">
+          </a>
+        </div>
+        <div class="gallery-item lab">
+          <a href="images/gallery11.webp" data-fancybox="gallery">
+            <img src="images/gallery11.webp" alt="">
+          </a>
+        </div>
+        <div class="gallery-item admission">
+          <a href="images/gallery-12.png" data-fancybox="gallery">
+            <img src="images/gallery-12.png" alt="">
+          </a>
+        </div>
+        <div class="gallery-item facilities">
+          <a href="images/gallery11.webp" data-fancybox="gallery">
+            <img src="images/gallery11.webp" alt="">
+          </a>
+        </div>
+        <div class="gallery-item facilities">
+          <a href="images/gallery-1.png" data-fancybox="gallery">
+            <img src="images/gallery-1.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Gallery Area-->
 
   <!--Footer Area-->
   <section class="footer-area">
@@ -393,6 +493,36 @@
     <!---fancybox---->
     <script src="js/fancybox.min.js"></script>
     <!---fancybox---->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+      const buttons = document.querySelectorAll(".gallery-tabs .nav-link");
+      const items = document.querySelectorAll(".gallery-item");
+
+      buttons.forEach(button => {
+        button.addEventListener("click", function () {
+
+          // remove active from all
+          buttons.forEach(btn => btn.classList.remove("active"));
+
+          // add active to clicked
+          this.classList.add("active");
+
+          const filter = this.getAttribute("data-filter");
+
+          items.forEach(item => {
+            if (filter === "all" || item.classList.contains(filter)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+
+        });
+      });
+
+    });
+    </script>
   </body>
 </html>
   
