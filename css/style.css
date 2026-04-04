@@ -1085,7 +1085,7 @@ button {
   height: 100%;
   object-fit: cover;
   border-radius: 1.6rem;
-  transition: 0.4s;
+  transition: all .6s linear;
 }
 .faculty-area .faculty-card:hover .faculty-info {
     opacity: 1;
@@ -1122,7 +1122,6 @@ button {
 /* Hover Effect */
 .faculty-area .faculty-card:hover img {
   transform: scale(1.2);
-  transition: 0.4s;
 }
 
 /*Resposive CSS*/
