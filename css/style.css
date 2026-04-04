@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --ss-poppins: "Poppins", sans-serif;
-  --ss-dynapuff: "DynaPuff", system-ui;
+  --ss-love: "Love Ya Like A Sister", cursive;
   --ss-font500: 500;
   --ss-font600: 600;
   --ss-font700: 700;
@@ -105,7 +105,8 @@ button {
     color: #000;
     font-size: 3.5rem;
     line-height: 5rem;
-    font-family: var(--ss-dynapuff);
+    font-weight: 600;
+    font-family: var(--ss-love);
 }
 .p-100 {
     padding: 10rem 0rem;
@@ -238,6 +239,11 @@ button {
 .banner-area .banner-content h1 {
     font-size: 7rem;
     color: #fff;
+    font-weight: 600;
+    font-family: var(--ss-love);
+}
+.banner-area .banner-content h1 span {
+    color: var(--ss-secondary);
 }
 .banner-area .banner-content p {
     color: #fff;
@@ -876,9 +882,9 @@ button {
 /*Common Banner CSS*/
 .common-banner {
     padding: 12rem 0rem;
-    background: url(../images/banner.png) no-repeat;
+    background: url(../images/breadcrumb-bg.png) no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
 }
 .common-banner .sun-pic {
@@ -930,7 +936,7 @@ button {
 }
 .common-banner h2 {
     font-size: 5rem;
-    font-family: var(--ss-dynapuff);
+    font-family: var(--ss-love);
     position: relative;
     color: #fff;
 }
@@ -1042,6 +1048,83 @@ button {
     font-size: 1.6rem;
     line-height: 2.8rem;
 }
+/*Invest Area CSS*/
+
+/*Faculty page CSS*/
+/* Left Highlight Card */
+.faculty-area .faculty-highlight {
+  background: #22a6523b;
+  border-radius: 1.6rem;
+  padding: 5rem;
+  height: 100%;
+}
+.faculty-area .faculty-highlight .star-pic {
+    right: 20%;
+    bottom: 15%;
+    opacity: 0.4;
+}
+.faculty-area .faculty-highlight .mini-star-pic {
+    right: 6%;
+    top: 10%;
+    animation: 4s linear infinite alternate animation-popup-1;
+}
+.faculty-area .faculty-highlight h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+/* Faculty Cards */
+.faculty-area .faculty-card {
+  border-radius: 1.6rem;
+  overflow: hidden;
+  position: relative;
+}
+.faculty-area .faculty-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.6rem;
+  transition: 0.4s;
+}
+.faculty-area .faculty-card:hover .faculty-info {
+    opacity: 1;
+    visibility: visible;
+    bottom: 3rem;
+}
+/* Overlay Info */
+.faculty-area .faculty-info {
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -o-transition: all .5s linear 0s;
+    background-color: #fff;
+    border-radius: 0.6rem;
+    width: calc(100% - 60px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 2.5rem;
+    transition: all .5s linear;
+    position: absolute;
+    bottom: -5rem;
+    left: 0;
+    right: 0;
+}
+.faculty-area .faculty-info h5 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.faculty-area .faculty-info span {
+  font-size: 1.3rem;
+  color: #777;
+}
+/* Hover Effect */
+.faculty-area .faculty-card:hover img {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
 /*Resposive CSS*/
 @media (min-width: 1700px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -1217,6 +1300,9 @@ button {
         border: 1px solid #22a6523b;
         padding: 1rem;
     }
+    .faculty-area .faculty-highlight h2 {
+        font-size: 3rem;
+    }
 }
 @media screen and (min-width: 992px) {
     .header-area .navbar-nav .dropdown-menu {
@@ -1370,6 +1456,14 @@ button {
     }
     .vision-area .vision-left .common-btn {
         margin-top: 3rem;
+    }
+    .faculty-area .faculty-highlight {
+        padding: 4rem;
+    }
+    .faculty-area .faculty-highlight .star-pic {
+        right: 4%;
+        bottom: 15%;
+        max-width: 4rem;
     }
 }
 @media screen and (max-width: 575px) {
