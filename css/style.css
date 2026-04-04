@@ -353,8 +353,15 @@ button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 0rem 0rem 1.5rem 1.5rem;
 }
+.about-area .about-left {
+    overflow: hidden;
+}
 .about-area .about-left img {
     border-radius: 0rem 0rem 5rem 5rem;
+    transition: all .6s linear;
+}
+.about-area .about-left:hover img {
+    transform: scale(1.2);
 }
 .about-area .about-right {
     float: right;
