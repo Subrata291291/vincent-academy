@@ -1228,7 +1228,7 @@ button {
   font-weight: 600;
 }
 .gallery-area .gallery-tabs .nav-link.active {
-  background: #f24c2f;
+  background: var(--ss-primary);
   color: #fff;
 }
 /* Masonry Layout */
