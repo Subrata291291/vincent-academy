@@ -183,6 +183,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //Gallery Slider
 
+//Chairman message Slider
+new Swiper(".chairman-swiper", {
+  loop: true,
+  speed: 800,
+
+  direction: "horizontal", // mobile
+
+  breakpoints: {
+    768: {
+      direction: "vertical",
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    }
+  }
+});
+
 // /* Disable Right Click */
 // document.addEventListener('contextmenu', function (e) {
 //     e.preventDefault();

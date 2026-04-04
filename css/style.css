@@ -1123,7 +1123,92 @@ button {
 .faculty-area .faculty-card:hover img {
   transform: scale(1.2);
 }
+/*Faculty page CSS*/
 
+/*Chairman message page CSS*/
+.chairman-message-area {
+  /* background: linear-gradient(90deg, #d9468f, #ff4d6d); */
+  color: #000;
+  position: relative;
+}
+.chairman-message-area .chairman-pic {
+    text-align: right;
+    padding-right: 5rem;
+}
+.chairman-message-area .chairman-pic img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+.chairman-message-area .cm-content {
+  max-width: 80rem;
+}
+.chairman-message-area .cm-content .quote-icon {
+  font-size: 10rem;
+  color: var(--ss-secondary);
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+}
+.chairman-message-area .cm-content .quote-icon i {
+    line-height: normal;
+    display: block;
+}
+.chairman-message-area .note-area {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.chairman-message-area .note-area h4 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #ff8c48;
+}
+.chairman-message-area .cm-content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.chairman-message-area .cm-content p {
+  margin: 2rem 0rem;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+.chairman-message-area .cm-content ul li a {
+  color: #000;
+  font-size: 1.5rem;
+}
+.chairman-message-area .cm-content .mail-areas {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.chairman-message-area .cm-content ul li p {
+    margin: 0;
+}
+.chairman-message-area .cm-content ul li p span {
+    color: var(--ss-primary);
+}
+.chairman-message-area .chairman-swiper {
+  width: 100%;
+}
+.chairman-message-area .chairman-swiper {
+  max-height: 45rem;
+}
+.chairman-message-area .swiper-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chairman-message-area .swiper-pagination-bullet-active {
+    background-color: var(--ss-secondary);
+}
+.chairman-message-area .swiper-pagination {
+  display: none;
+}
 /*Resposive CSS*/
 @media (min-width: 1700px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -1198,13 +1283,19 @@ button {
         right: -5rem;
         bottom: -11rem;
     }
+    .chairman-message-area .note-area h4 {
+        font-size: 1.7rem;
+    }
+    .chairman-message-area .cm-content .quote-icon {
+        font-size: 7rem;
+    }
 }
 @media screen and (max-width: 991px) {
-    .offcanvas .dropdown-menu {
-        position: static !important;
-        float: none;
-        width: 100%;
-        transform: translate3d(0px, 0px, 0px) !important;
+.offcanvas .dropdown-menu {
+    position: static !important;
+    float: none;
+    width: 100%;
+    transform: translate3d(0px, 0px, 0px) !important;
   }
   .offcanvas ul li a {
     font-size: 1.6rem;
@@ -1302,6 +1393,14 @@ button {
     .faculty-area .faculty-highlight h2 {
         font-size: 3rem;
     }
+    .chairman-message-area .chairman-pic {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-right: 0;
+    }
+    .chairman-message-area .chairman-pic img {
+        width: 100%;
+    }
 }
 @media screen and (min-width: 992px) {
     .header-area .navbar-nav .dropdown-menu {
@@ -1321,7 +1420,9 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
-
+    .chairman-message-area .swiper-pagination {
+        display: block;
+    }
 }
 @media screen and (max-width: 767px) {
     .banner-area .banner-content h1 {
@@ -1464,6 +1565,30 @@ button {
         bottom: 15%;
         max-width: 4rem;
     }
+    .chairman-message-area .chairman-swiper {
+        max-height: 100%;
+    }
+    .chairman-message-area .note-area {
+        flex-direction: column;
+        align-items: start;
+    }
+    .chairman-message-area .note-area h4 {
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: inherit;
+    }
+    .chairman-message-area .cm-content h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    .chairman-message-area .chairman-pic {
+        margin-bottom: 4rem;
+    }
+    .chairman-message-area .cm-content .quote-icon {
+        font-size: 5rem;
+        top: -1rem;
+    }
+
 }
 @media screen and (max-width: 575px) {
     
