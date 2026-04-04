@@ -600,8 +600,12 @@ button {
     color: #fff;
     background: url(../images/program-bg.png) no-repeat;
     background-position: center;
-    padding: 1rem;
+    padding: 1rem 0rem;
     margin: 2rem 0rem 2.5rem;
+    background-size: cover;
+    max-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .advisor-area .advisor-swiper p {
     font-size: 1.6rem;
@@ -611,14 +615,11 @@ button {
 }
 .advisor-area .swiper-box {
     background-color: #fff;
-    border: 1px solid #33BFFF;
+    border: 1px solid var(--ss-primary);
     border-radius: 1.5rem;
     position: relative;
 }
 .advisor-area .swiper-box p {
-    max-width: 23rem;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 1.4rem;
 }
 .advisor-area .swiper-box .swiper-content {
@@ -641,7 +642,7 @@ button {
     margin-bottom: 1rem;
 }
 .advisor-area .swiper-content p span {
-    color: #33BFFF;
+    color: var(--ss-primary);
     margin-right: 0.5rem;
 }
 /*Advisor Area*/
