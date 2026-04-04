@@ -1257,7 +1257,94 @@ button {
 .gallery-area .gallery-item.hide {
   display: none;
 }
+/*Gallery Page CSS*/
 
+/*Admission Page CSS*/
+.admission-area .admission-steps .sub-title {
+  color: var(--ss-primary);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.admission-area .admission-steps h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin: 1rem 0rem 2rem;
+}
+.admission-area .step-box {
+    flex-direction: column;
+    gap: 3rem
+}
+.admission-area .step-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 7rem;
+}
+.admission-area .step-item::before {
+  content: "";
+  position: absolute;
+  left: 2.4rem;
+  top: 0;
+  width: 0.2rem;
+  height: 13rem;
+  background: var(--ss-primary);
+}
+.admission-area .step-item:last-child::before {
+  display: none;
+}
+.admission-area .step-number {
+  position: absolute;
+  left: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--ss-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.admission-area .step-item.active .step-number {
+  background: var(--ss-primary);
+  color: #fff;
+}
+.admission-area .step-content h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.admission-area .step-content p {
+  font-size: 1.6rem;
+  color: #666;
+}
+.admission-area .admission-steps .title-box {
+    margin-bottom: 2rem;
+}
+.admission-area .admission-steps .desc {
+  font-size: 1.6rem;
+  color: #666;
+  margin-bottom: 5rem;
+}
+.admission-area .admission-form label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.admission-area .admission-form {
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+    padding: 4rem;
+}
+.admission-area .admission-form .form-control {
+  background: #f1f3f5;
+  border: none;
+  border-radius: 8px;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
+}
 
 
 /*Resposive CSS*/
