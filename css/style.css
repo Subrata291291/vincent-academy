@@ -195,6 +195,7 @@ button {
 }
 .header-area .navbar-nav .dropdown-menu .dropdown-item {
     padding: 1rem 2rem;
+    border-bottom: 1px solid var(--ss-primary);
 }
 .header-area .common-btn {
     margin-left: 2.5rem;
@@ -1353,6 +1354,105 @@ button {
 .form-control:focus {
     box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
 }
+/*Admission Page CSS*/
+
+/*Contact Page CSS*/
+.contact-card {
+  background: #f6f7f9;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+.contact-card h5 {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.contact-card p {
+  font-size: 1.4rem;
+  color: #777;
+  margin: 0.5rem 0rem 1rem;
+}
+.contact-card span {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.contact-card a {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #000;
+}
+.icon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+.green { background: #2ecc71; }
+.yellow { background: #f1c40f; }
+.purple { background: #8e44ad; }
+.orange { background: #ff6b35; }
+.contact-form-wrapper {
+  background: #f6f7f9;
+  padding: 4rem;
+  border-radius: 2rem;
+}
+.contact-form-wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.custom-input {
+  position: relative;
+}
+.contact-form-wrapper input {
+    border-radius: 5rem !important;
+}
+.contact-form-wrapper select {
+    border-radius: 5rem !important;
+}
+.custom-input .form-control,
+.custom-input select {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.6rem;
+}
+
+.custom-input select {
+  color: #555;
+}
+.form-check-input:checked {
+    background-color: var(--ss-primary);
+    border-color: var(--ss-primary);
+}
+.form-check-input:focus {
+    box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
+}
+.custom-input span {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1.6rem;
+}
+.dropdown-icon i {
+  font-size: 22px;
+}
+.textarea .form-control {
+  border-radius: 15px;
+  height: 150px;
+}
 
 
 /*Resposive CSS*/
@@ -1440,6 +1540,12 @@ button {
     }
     .gallery-area .gallery-masonry {
         column-count: 3;
+    }
+    .contact-card a {
+        font-size: 1.8rem;
+    }
+    .contact-card span {
+        font-size: 1.8rem;
     }
 }
 @media screen and (max-width: 991px) {
@@ -1553,6 +1659,15 @@ button {
     .chairman-message-area .chairman-pic img {
         width: 100%;
     }
+    .contact-card a {
+        font-size: 1.6rem;
+    }
+    .contact-card span {
+        font-size: 1.6rem;
+    }
+    .contact-card {
+        padding: 1.5rem;
+    }
 }
 @media screen and (min-width: 992px) {
     .header-area .navbar-nav .dropdown-menu {
@@ -1561,6 +1676,8 @@ button {
         visibility: hidden;
         transform: translateY(10px);
         transition: all 0.3s ease;
+        border: none;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   }
   .header-area .navbar-nav .dropdown:hover .dropdown-menu {
     opacity: 1;
@@ -1742,6 +1859,12 @@ button {
     }
     .gallery-area .gallery-masonry {
         column-count: 2;
+    }
+    .contact-form-wrapper {
+        padding: 4rem 2rem;
+    }
+    .contact-form-wrapper .common-btn {
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 575px) {
