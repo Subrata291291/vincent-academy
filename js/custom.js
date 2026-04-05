@@ -218,6 +218,38 @@ new Swiper(".recent-posts-slider", {
 });
 //Sidebar Slider
 
+//infrastructure Tab
+const tabs = document.querySelectorAll(".infra-tabs .nav-link");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", function () {
+
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.add("d-none"));
+
+    this.classList.add("active");
+    document.getElementById(this.dataset.tab).classList.remove("d-none");
+
+  });
+});
+//infrastructure Tab
+
+//lab Slider
+new Swiper(".labSwiper", {
+  slidesPerView: 1,
+  // spaceBetween: 20,
+  loop: true,
+  speed: 800,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+//lab Slider
+
+
 // /* Disable Right Click */
 // document.addEventListener('contextmenu', function (e) {
 //     e.preventDefault();

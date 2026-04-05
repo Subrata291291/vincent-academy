@@ -1491,7 +1491,7 @@ button {
 }
 .offcanvas-body  .sidebar-desc {
   color: #555;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 .offcanvas-body .recent-posts h4 {
@@ -1578,6 +1578,88 @@ button {
 }
 /* Transport page CSS */
 
+/* Infrastructure page CSS */
+.infra-section .infra-tabs {
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.infra-section .infra-tabs .nav-link {
+  background: #f5f5f5;
+  color: #333;
+  border-radius: 0.8rem;
+  text-align: left;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+}
+.infra-section .infra-tabs .nav-link.active {
+  background: #ff3366;
+  color: #fff;
+}
+.infra-section .infra-tabs .nav-link.active::after {
+  content: "\ea6c";
+  font-family: "remixicon";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%) translateX(-5px);
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+.infra-section .infra-tabs .nav-link:hover {
+  background: #ff3366;
+  color: #fff;
+}
+.infra-section .infra-banner {
+  background: #ff3366;
+  color: #fff;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+}
+.infra-section .infra-banner h3 {
+    font-family: var(--ss-love);
+    font-size: 4rem;
+    font-weight: 600;
+}
+.infra-section .infra-banner .common-btn {
+    margin: 2rem auto;
+}
+.infra-section .tab-content {
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 5rem;
+}
+.infra-section .tab-content h3 {
+    font-size: 2.5rem;
+    color: #ff3366;
+}
+.infra-section .tab-content p {
+    font-size: 1.6rem;
+    margin: 1rem 0rem 3rem;
+}
+.infra-section .tab-content .girl-diving {
+    right: 0;
+    top: -1rem;
+    max-width: 10rem;
+}
+.infra-section .tab-content .desc {
+    font-size: 1.7rem;
+    margin: 2rem 0rem;
+}
+.infra-section .round-star {
+    max-width: 10rem;
+    right: 2rem;
+    bottom: 40rem;
+    animation: rotate2 6s linear infinite;
+}
+.infra-section {
+    overflow: hidden;
+}
+/* Infrastructure page CSS */
+
+
 /*Resposive CSS*/
 @media (min-width: 1700px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -1590,6 +1672,10 @@ button {
     }
     .about-area .about-right .title-box {
         margin-bottom: 3rem;
+    }
+    .infra-section .infra-banner h3 {
+        font-size: 3rem;
+        line-height: 4rem;
     }
 }
 @media (max-width: 1399px) {
@@ -1669,6 +1755,15 @@ button {
     }
     .contact-card span {
         font-size: 1.8rem;
+    }
+    .infra-section .round-star {
+        bottom: 4rem;
+    }
+    .infra-section .infra-banner h3 {
+        font-size: 3rem;
+    }
+    .infra-section .tab-content {
+        padding-left: 0rem;
     }
 }
 @media screen and (max-width: 991px) {
@@ -1793,6 +1888,9 @@ button {
     }
     .map-area iframe {
         height: 20rem;
+    }
+    .infra-section .tab-content {
+        margin-top: 4rem;
     }
 }
 @media screen and (min-width: 992px) {
@@ -1991,6 +2089,21 @@ button {
     }
     .contact-form-wrapper .common-btn {
         margin: 0 auto;
+    }
+    .infra-section .infra-banner h3 {
+        font-size: 2.5rem;
+        line-height: 3.8rem;
+    }
+    .infra-section .tab-content .girl-diving {
+        top: -3rem;
+        max-width: 5rem;
+    }
+    .infra-section .round-star {
+        max-width: 5rem;
+    }
+    .infra-section .tab-content .desc {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
     }
 }
 @media screen and (max-width: 575px) {
