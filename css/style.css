@@ -1703,7 +1703,7 @@ button {
 }
 .job-listing-area .job-type {
   background: #eef3ff;
-  color: #3b82f6;
+  color: var(--ss-primary);
   font-size: 1.2rem;
   padding: 0.3rem 1rem;
   border-radius: 2rem;
