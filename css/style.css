@@ -883,13 +883,16 @@ button {
     padding: 4rem 0rem;
     margin-top: 4rem;
 }
+.footer-area .copyright-text a {
+    color: var(--ss-secondary);
+}
 .footer-area .copyright-text span {
     color: var(--ss-secondary);
 }
 .footer-area .footer-middle .play-boy {
     right: 4rem;
     bottom: -9rem;
-    animation: boyFloat 3s ease-in-out infinite;
+    animation: boyFloat 6s ease-in-out infinite;
 }
 /*Common Banner CSS*/
 .common-banner {
@@ -1547,6 +1550,33 @@ button {
 .offcanvas-body .recent-posts-slider .swiper-slide {
   height: auto;
 }
+/* Offcanvas CSS */
+
+/* Transport page CSS */
+.transport-area .accordion-item {
+  border: 1px solid var(--ss-primary);
+  border-radius: 1.2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.accordion-button::after {
+    width: 2rem;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--ss-primary);
+}
+.transport-area .accordion-button {
+  background: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  box-shadow: none;
+  padding: 20px;
+}
+.transport-area .accordion-body {
+  background: #fff;
+  padding: 2.5rem;
+}
+/* Transport page CSS */
 
 /*Resposive CSS*/
 @media (min-width: 1700px) {
