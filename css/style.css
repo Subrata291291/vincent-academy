@@ -1776,6 +1776,7 @@ button {
 }
 .job-details-area .job-info-grid i {
     color: var(--ss-primary);
+    margin-right: 0.5rem;
 }
 .job-details-area .job-info-grid p {
   background: #f8f9fb;
