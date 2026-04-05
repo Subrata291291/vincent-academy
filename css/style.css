@@ -1758,6 +1758,9 @@ button {
   color: #555;
   margin-bottom: 1rem;
 }
+.job-details-area .job-meta p i {
+    color: var(--ss-primary);
+}
 .job-details-area .job-content {
   background: #fff;
   padding: 25px;
@@ -1771,9 +1774,12 @@ button {
   font-size: 1.4rem;
   margin-bottom: 4rem;
 }
+.job-details-area .job-info-grid i {
+    color: var(--ss-primary);
+}
 .job-details-area .job-info-grid p {
   background: #f8f9fb;
-  padding: 1rem 2rem;
+  padding: 1.5rem 1rem;
   font-size: 1.5rem;
   border-radius: 0.8rem;
 }
