@@ -234,7 +234,7 @@ button {
     transform: rotate(180deg);
 }
 .banner-area .banner-content {
-    max-width: 67rem;
+    max-width: 80rem;
     position: relative;
 }
 .banner-area .banner-content h1 {
@@ -1231,11 +1231,12 @@ button {
     margin-bottom: 4rem;
 }
 .gallery-area .gallery-tabs .nav-link {
-  background: #e9e3e0;
+  background: #f5f5f5;
   color: #333;
   padding: 1rem 2rem;
   border-radius: 1.2rem;
   margin: 0.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .gallery-area .gallery-tabs .nav-link.active {
@@ -1466,6 +1467,11 @@ button {
 .offcanvas-body .sidebar-top {
   flex: 0 0 auto;
 }
+#offcanvasRight .btn-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
 .offcanvas-body .recent-posts {
   margin-top: auto;
 }
@@ -1595,7 +1601,7 @@ button {
   position: relative;
 }
 .infra-section .infra-tabs .nav-link.active {
-  background: #ff3366;
+  background: var(--ss-primary);
   color: #fff;
 }
 .infra-section .infra-tabs .nav-link.active::after {
@@ -1609,11 +1615,11 @@ button {
   transition: all 0.3s ease;
 }
 .infra-section .infra-tabs .nav-link:hover {
-  background: #ff3366;
+  background: var(--ss-primary);
   color: #fff;
 }
 .infra-section .infra-banner {
-  background: #ff3366;
+  background: var(--ss-primary);
   color: #fff;
   padding: 4rem 2rem;
   border-radius: 10px;
@@ -1633,7 +1639,7 @@ button {
 }
 .infra-section .tab-content h3 {
     font-size: 2.5rem;
-    color: #ff3366;
+    color: var(--ss-primary);
 }
 .infra-section .tab-content p {
     font-size: 1.6rem;
@@ -1825,9 +1831,10 @@ button {
 .job-modal .modal-header {
     border: none;
 }
-.job-modal .modal-header .btn-close {
+.job-modal .btn-close {
     position: absolute;
     right: 2rem;
+    z-index: 1;
 }
 
 /*Resposive CSS*/
