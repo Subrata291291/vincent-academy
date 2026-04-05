@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 767px) { 
   .loader-text-wrap h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .loader-logo {
     width: 100px;

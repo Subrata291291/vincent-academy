@@ -227,66 +227,119 @@
   <!--Header Area-->
   <!--Common banner-->
   <section class="common-banner text-center position-relative">
-    <h2>Activities</h2>
+    <h2>Job Opportunities</h2>
     <ul class="d-flex">
         <li><a href="#">Home</a></li>
         <li>//</li>
-        <li class="active"><a href="#">Activities</a></li>
+        <li class="active"><a href="#">Job Opportunities</a></li>
     </ul>
     <img src="images/section-notch-top.png" alt="" class="commpon-shape-pic position-absolute">
     <!-- <img src="images/sun.png" alt="" class="sun-pic position-absolute"> -->
   </section>
   <!--Common banner-->
 
-  <!--Activities Area-->
-  <section class="activity-area mt-100 position-relative">
+  <!-- Job Details Area -->
+  <section class="job-details-area p-100">
     <div class="container">
-      <div class="title-box">
-        <h3><span><img src="images/title-line.png" alt=""></span> OUR ACTIVITIES</h3>
-        <h4>Empowering learning through engaging educational activities</h4>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="activity-box">
-            <h3>Swimming Pool</h3>
-            <img src="images/swimming.webp" alt="">
-            <p>
-              It is a long established fact that a reader perfection will be distracted by the readable content are the priority.It is a long established fact.
-            </p>
-          </div>
+        <div class="row g-4">
+        <!-- LEFT SIDEBAR -->
+        <div class="col-lg-4">
+            <div class="job-sidebar position-sticky top-0">
+                <div class="company-logo text-center mb-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Lenovo_logo_2015.svg" alt="">
+                </div>
+                <h5 class="job-title">Lead Teacher</h5>
+                <p class="job-short">
+                    Search all the open positions on the web. Get your own personalized salary estimate.
+                </p>
+                <div class="job-meta mt-5">
+                    <p><i class="ri-time-line"></i> 2 days ago</p>
+                    <p><i class="ri-map-pin-line"></i> P.O. Joteram, Burdwan -713104</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="activity-box">
-            <h3>Laboratories</h3>
-            <img src="images/lab.webp" alt="">
-            <p>
-              It is a long established fact that a reader perfection will be distracted by the readable content are the priority.It is a long established fact.
-            </p>
-          </div>
+        <!-- RIGHT CONTENT -->
+        <div class="col-lg-8">
+            <div class="job-content">
+                <!-- Job Info -->
+                <h6 class="section-title mb-3">Job Information:</h6>
+                <div class="job-info-grid">
+                    <p><i class="ri-user-line"></i> <span>Employee Type:</span> Full Time</p>
+                    <p><i class="ri-map-pin-line"></i> <span>Location:</span> Joteram, Bardhaman</p>
+                    <p><i class="ri-time-line"></i> <span>Date posted:</span> 5th March, 2026</p>
+                    <p><i class="ri-briefcase-line"></i> <span>Job Type:</span> Lead teacher</p>
+                    <p><i class="ri-bar-chart-line"></i> <span>Experience:</span> 2+ Year</p>
+                    <p><i class="ri-graduation-cap-line"></i> <span>Qualifications:</span> MSC</p>
+                    <p><i class="ri-money-dollar-circle-line"></i> <span>Salary:</span> 50k - 70k</p>
+                </div>
+                <!-- Description -->
+                <h6 class="section-title mb-3">Job Description:</h6>
+                <p class="desc">
+                    One disadvantage of Lorem Ipsum is that in Latin certain letters appear more frequently than others...
+                </p>
+                <!-- Responsibilities -->
+                <div class="responsiblity-box">
+                    <h6 class="section-title mb-3">Responsibilities and Duties:</h6>
+                    <ul class="job-list">
+                        <li><span><i class="ri-check-line"></i></span> Participate in requirements analysis</li>
+                        <li><span><i class="ri-check-line"></i></span> Write clean, scalable code using C# and .NET</li>
+                        <li><span><i class="ri-check-line"></i></span> Test and deploy applications</li>
+                        <li><span><i class="ri-check-line"></i></span> Revise, update and debug code</li>
+                        <li><span><i class="ri-check-line"></i></span> Improve existing software</li>
+                    </ul>
+                </div>
+                <!-- Skills -->
+                <div class="skill-box">
+                    <h6 class="section-title mb-3">Required Experience & Skills:</h6>
+                    <ul class="job-list">
+                        <li><span><i class="ri-check-line"></i></span> Proven experience as a .NET Developer</li>
+                        <li><span><i class="ri-check-line"></i></span> Good understanding of SQL</li>
+                        <li><span><i class="ri-check-line"></i></span> RESTful APIs experience</li>
+                        <li><span><i class="ri-check-line"></i></span> Object-oriented programming</li>
+                        <li><span><i class="ri-check-line"></i></span> Problem-solving skills</li>
+                    </ul>
+                </div>
+                <!-- Button -->
+                <button class="common-btn mt-5" data-bs-toggle="modal" data-bs-target="#applyModal">APPLY NOW</button>
+            </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="activity-box">
-            <h3>Library</h3>
-            <img src="images/library.webp" alt="">
-            <p>
-              It is a long established fact that a reader perfection will be distracted by the readable content are the priority.It is a long established fact.
-            </p>
-          </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="activity-box">
-            <h3>Performing Arts</h3>
-            <img src="images/transport.webp" alt="">
-            <p>
-              It is a long established fact that a reader perfection will be distracted by the readable content are the priority.It is a long established fact.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-    <img src="images/perasute.png" alt="" class="activity-boy position-absolute">
   </section>
-  <!--Activities Area-->
+  <!--Job Details Area-->
+  <!-- Apply Job Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content job-modal">
+            <!-- Header -->
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Body -->
+            <div class="modal-body">
+                <form>
+                    <div class="mb-4">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Phone</label>
+                        <input type="tel" class="form-control" placeholder="Enter your Phone">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Upload CV</label>
+                        <input type="file" class="form-control">
+                    </div>
+                    <button type="submit" class="common-btn w-100 mt-5">Submit Application</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
 
   <!--Footer Area-->
   <section class="footer-area">
@@ -298,7 +351,7 @@
             <img src="images/pencil_girl.png" alt="" class="play-girl position-absolute">
             <img src="images/footer-logo.png" alt="">
             <p>
-              St.Vincent's Academy, Purba Bardhaman owned by krishnam foundation, founded in 2023, Chaired by Chairman Mr.Sanjay kumar Gupta.
+              St.Vincent's Academy, Purba P.O. Joteram, Burdwan -713104 owned by krishnam foundation, founded in 2023, Chaired by Chairman Mr.Sanjay kumar Gupta.
             </p>
             <ul class="d-flex">
               <li>
