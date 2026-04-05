@@ -1453,7 +1453,11 @@ button {
   border-radius: 15px;
   height: 150px;
 }
-
+.map-area iframe {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 2rem;
+}
 
 /*Resposive CSS*/
 @media (min-width: 1700px) {
@@ -1667,6 +1671,9 @@ button {
     }
     .contact-card {
         padding: 1.5rem;
+    }
+    .map-area iframe {
+        height: 20rem;
     }
 }
 @media screen and (min-width: 992px) {
