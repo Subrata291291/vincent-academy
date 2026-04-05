@@ -1357,36 +1357,36 @@ button {
 /*Admission Page CSS*/
 
 /*Contact Page CSS*/
-.contact-card {
+.contact-details .contact-card {
   background: #f6f7f9;
   padding: 2.5rem;
   border-radius: 1.5rem;
   text-align: center;
   transition: 0.3s;
 }
-.contact-card:hover {
+.contact-details .contact-card:hover {
   transform: translateY(-5px);
 }
-.contact-card h5 {
+.contact-details .contact-card h5 {
   margin-top: 1.5rem;
   font-size: 1.6rem;
   font-weight: 600;
 }
-.contact-card p {
+.contact-details .contact-card p {
   font-size: 1.4rem;
   color: #777;
   margin: 0.5rem 0rem 1rem;
 }
-.contact-card span {
+.contact-details .contact-card span {
   font-weight: 600;
   font-size: 2rem;
 }
-.contact-card a {
+.contact-details .contact-card a {
   font-weight: 600;
   font-size: 2rem;
   color: #000;
 }
-.icon {
+.contact-details .icon {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
@@ -1397,48 +1397,47 @@ button {
   font-size: 3rem;
   margin: 0 auto;
 }
-.green { background: #2ecc71; }
-.yellow { background: #f1c40f; }
-.purple { background: #8e44ad; }
-.orange { background: #ff6b35; }
-.contact-form-wrapper {
+.contact-details .green { background: #2ecc71; }
+.contact-details .yellow { background: #f1c40f; }
+.contact-details .purple { background: #8e44ad; }
+.contact-details .orange { background: #ff6b35; }
+.contact-details .contact-form-wrapper {
   background: #f6f7f9;
   padding: 4rem;
   border-radius: 2rem;
 }
-.contact-form-wrapper h2 {
+.contact-details .contact-form-wrapper h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
-.custom-input {
+.contact-details .custom-input {
   position: relative;
 }
-.contact-form-wrapper input {
+.contact-details .contact-form-wrapper input {
     border-radius: 5rem !important;
 }
-.contact-form-wrapper select {
+.contact-details .contact-form-wrapper select {
     border-radius: 5rem !important;
 }
-.custom-input .form-control,
-.custom-input select {
+.contact-details .custom-input .form-control,
+.contact-details .custom-input select {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 5rem;
   padding: 1.2rem 2rem;
   font-size: 1.6rem;
 }
-
-.custom-input select {
+.contact-details .custom-input select {
   color: #555;
 }
-.form-check-input:checked {
+.contact-details .form-check-input:checked {
     background-color: var(--ss-primary);
     border-color: var(--ss-primary);
 }
-.form-check-input:focus {
+.contact-details .form-check-input:focus {
     box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
 }
-.custom-input span {
+.contact-details .custom-input span {
   position: absolute;
   right: 1.5rem;
   top: 50%;
@@ -1446,17 +1445,107 @@ button {
   color: #888;
   font-size: 1.6rem;
 }
-.dropdown-icon i {
+.contact-details .dropdown-icon i {
   font-size: 22px;
 }
-.textarea .form-control {
+.contact-details .textarea .form-control {
   border-radius: 15px;
   height: 150px;
 }
-.map-area iframe {
+.contact-details .map-area iframe {
     width: 100%;
     height: 40rem;
     margin-bottom: 2rem;
+}
+/*Contact Page CSS*/
+
+/*Offcanvas CSS*/
+.offcanvas-body .sidebar-top {
+  flex: 0 0 auto;
+}
+.offcanvas-body .recent-posts {
+  margin-top: auto;
+}
+.offcanvas-body .sidebar-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.offcanvas-body .sidebar-top {
+  text-align: left;
+}
+.offcanvas-body .sidebar-logo {
+  max-width: 10rem;
+}
+.offcanvas-body .brand-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.offcanvas-body  .brand-sub {
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+.offcanvas-body  .sidebar-desc {
+  color: #555;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.offcanvas-body .recent-posts h4 {
+  font-weight: 700;
+}
+.offcanvas-body .divider {
+  width: 100%;
+  height: 2px;
+  background: #ddd;
+  margin: 1.5rem 0rem;
+  position: relative;
+  overflow: hidden;
+}
+.offcanvas-body .divider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 2px;
+  background: var(--ss-primary);
+  animation: slideLine 2s linear infinite;
+}
+.offcanvas-body .post-item {
+  gap: 1.5rem;
+  padding: 1.5rem 0rem 2rem;
+}
+.offcanvas-body .swiper-slide {
+  border-bottom: 1px solid #eee;
+}
+/* .offcanvas-body .swiper-slide:last-child {
+  border-bottom: none;
+} */
+.offcanvas-body .post-item img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.offcanvas-body .post-item h6 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 2.2rem;
+}
+.offcanvas-body .post-item span {
+  font-size: 1.2rem;
+  color: var(--ss-primary);
+}
+.offcanvas-body .common-btn {
+    margin-left: 0rem;
+}
+.offcanvas-body .recent-posts-slider {
+  height: 40rem;
+}
+.offcanvas-body .recent-posts-slider .swiper-slide {
+  height: auto;
 }
 
 /*Resposive CSS*/

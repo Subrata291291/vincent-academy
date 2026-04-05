@@ -206,3 +206,16 @@
         transform: scale(1)rotate(360deg)
     }
 }
+
+
+@keyframes slideLine {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: calc(100% - 60px); /* go right */
+  }
+  100% {
+    left: 0%; /* come back */
+  }
+}

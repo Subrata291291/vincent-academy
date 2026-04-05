@@ -201,9 +201,22 @@ new Swiper(".chairman-swiper", {
     }
   }
 });
+//Chairman message Slider
 
-/* Gallery page */
+//Sidebar Slider
+new Swiper(".recent-posts-slider", {
+  direction: "vertical",
+  slidesPerView: 4,
+  // spaceBetween: 20,
+  loop: true,
+  speed: 800,
 
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+//Sidebar Slider
 
 // /* Disable Right Click */
 // document.addEventListener('contextmenu', function (e) {
